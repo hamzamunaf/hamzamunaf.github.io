@@ -4,6 +4,7 @@
 // Your Summary And Greeting Section
 
 import emoji from "react-easy-emoji";
+import logo from "./CraftCenterImage.JPG";
 
 const greeting = {
   /* Your Summary And Greeting Section */
@@ -29,8 +30,8 @@ const skillsSection = {
   title: "What i do",
   subTitle: "Computer Science student at Oregon State University",
   skills: [
-    emoji("⚡ Compeleting my Senior project integrating SAML 2.0 and OAuth2.0 in Asp.NET MVC"),
-    emoji("⚡ Daily bug fixing for my student job at Graduate School (Salesforce)"),
+    emoji("⚡ Compeleting my Senior project integrating SAML 2.0 and OAuth2.0 in Asp.NET MVC."),
+    emoji("⚡ Daily bug fixing for my student job at Graduate School (Salesforce):  diagnose issues, fix bugs, write unit tests, pull requests in an active university-critical codebase on the Salesforce platform with contributors from many different university departments"),
     emoji("⚡ Integration of third party API's to understand how they are working"),
     emoji("⚡ Working towards CSX Cybersecurity Fundamentals Certificate")
   ],
@@ -172,16 +173,12 @@ const openSource = {
 // Some Big Projects You have worked with your company
 
 const bigProjects = {
-  title: "Projects",
-  subtitle: "Some small Projects",
+  title: "Senior Design Project",
+  subtitle: "Developed OSU Craft Center Online Tool,  Senior Project: Custom Asp.Net MVC application development for student registration for classes in the craft center on campus using C# and Microsoft SQL Server with Entity Framework.",
   projects: [
     {
-      image: "https://nakedsecurity.sophos.com/wp-content/uploads/sites/2/2017/01/mongodb.png?w=775",
-      link: "http://saayahealth.com/"
-    },
-    {
-      image: require("./assets/images/nextuLogo.webp"),
-      link: "http://nextu.se/"
+      image: logo,
+      link: "https://media.oregonstate.edu/media/t/1_7kd65oxz"
     }
   ]
 };
