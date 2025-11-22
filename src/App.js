@@ -10,6 +10,19 @@ function App() {
   const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
+    // Ensure body starts in light mode by default
+    // Only apply dark mode if user has explicitly saved it
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme !== 'dark') {
+      document.body.classList.remove('dark-mode');
+      // Clear any existing dark mode class
+      if (document.body.classList.contains('dark-mode')) {
+        document.body.classList.remove('dark-mode');
+      }
+    }
+  }, []);
+
+  useEffect(() => {
     // Hide preloader when page is fully loaded
     const handleLoad = () => {
       // Start fade out animation

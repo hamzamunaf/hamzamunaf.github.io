@@ -7,7 +7,7 @@ import { greeting } from "../../portfolio";
 import { Fade } from "react-awesome-reveal";
 import emoji from "react-easy-emoji";
 import StyleContext from "../../contexts/StyleContext";
-import developerActivity from "../../assets/images/developerActivity.svg";
+import SalesforceHero from "../../components/salesforceHero/SalesforceHero";
 import { Astro, Codey } from "../../components/trailheadMascots/TrailheadMascots";
 
 export default function Greeting() {
@@ -51,11 +51,7 @@ export default function Greeting() {
             </div>
           </div>
           <div className="greeting-image-div">
-            <img
-              alt="Developer Activity"
-              src={developerActivity}
-              className="greeting-image"
-            ></img>
+            <SalesforceHero />
           </div>
         </div>
       </div>

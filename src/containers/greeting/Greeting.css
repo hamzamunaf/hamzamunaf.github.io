@@ -57,30 +57,19 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  min-height: 500px;
 }
 
-.greeting-image-div > img,
-.greeting-image {
-  max-width: 100%;
-  height: auto;
-  filter: drop-shadow(0 8px 16px rgba(0, 161, 224, 0.2));
-  transition: all 0.3s ease;
-  animation: float 6s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-15px);
+@media (max-width: 1380px) {
+  .greeting-image-div {
+    min-height: 400px;
   }
 }
 
-.greeting-image-div > img:hover,
-.greeting-image:hover {
-  transform: translateY(-5px) scale(1.02);
-  filter: drop-shadow(0 12px 24px rgba(0, 161, 224, 0.3));
+@media (max-width: 768px) {
+  .greeting-image-div {
+    min-height: 300px;
+  }
 }
 .wave-emoji {
   animation-duration: 1.8s;

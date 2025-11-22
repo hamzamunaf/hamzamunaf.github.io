@@ -22,17 +22,17 @@ import { educationInfo } from "../portfolio";
 export default class Main extends Component {
   constructor(props) {
     super(props);
-    // Load theme preference from localStorage, default to light mode
+    // Default to light mode - only use dark if explicitly saved in localStorage
     const savedTheme = localStorage.getItem('theme');
-    const isDark = savedTheme === 'dark'; // Only use dark if explicitly set
+    const isDark = savedTheme === 'dark'; // Only true if user explicitly chose dark
     
     this.state = {
-      isDark: isDark,
+      isDark: isDark || false, // Explicitly default to false (light mode)
     };
   }
 
   componentDidMount() {
-    // Apply theme to body
+    // Ensure body class matches state - default to light mode
     if (this.state.isDark) {
       document.body.classList.add('dark-mode');
     } else {

@@ -1,0 +1,418 @@
+.salesforce-hero-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(0, 161, 224, 0.05) 0%, rgba(23, 152, 193, 0.05) 100%);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+/* Background clouds */
+.hero-clouds {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.cloud {
+  position: absolute;
+  background: rgba(0, 161, 224, 0.1);
+  border-radius: 50px;
+  opacity: 0.6;
+}
+
+.cloud:before,
+.cloud:after {
+  content: '';
+  position: absolute;
+  background: rgba(0, 161, 224, 0.1);
+  border-radius: 50px;
+}
+
+.cloud-1 {
+  width: 100px;
+  height: 40px;
+  top: 20%;
+  left: 10%;
+  animation: cloudFloat1 20s ease-in-out infinite;
+}
+
+.cloud-1:before {
+  width: 50px;
+  height: 50px;
+  top: -25px;
+  left: 10px;
+}
+
+.cloud-1:after {
+  width: 60px;
+  height: 60px;
+  top: -35px;
+  right: 10px;
+}
+
+.cloud-2 {
+  width: 120px;
+  height: 50px;
+  top: 60%;
+  right: 15%;
+  animation: cloudFloat2 25s ease-in-out infinite;
+}
+
+.cloud-2:before {
+  width: 60px;
+  height: 60px;
+  top: -30px;
+  left: 15px;
+}
+
+.cloud-2:after {
+  width: 70px;
+  height: 70px;
+  top: -40px;
+  right: 15px;
+}
+
+.cloud-3 {
+  width: 80px;
+  height: 35px;
+  bottom: 15%;
+  left: 20%;
+  animation: cloudFloat3 18s ease-in-out infinite;
+}
+
+.cloud-3:before {
+  width: 45px;
+  height: 45px;
+  top: -22px;
+  left: 10px;
+}
+
+.cloud-3:after {
+  width: 55px;
+  height: 55px;
+  top: -28px;
+  right: 10px;
+}
+
+@keyframes cloudFloat1 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -20px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 10px) scale(0.9);
+  }
+}
+
+@keyframes cloudFloat2 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-40px, 25px) scale(1.15);
+  }
+}
+
+@keyframes cloudFloat3 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(25px, -15px) scale(0.95);
+  }
+}
+
+/* Central Salesforce cloud */
+.hero-salesforce-cloud {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  z-index: 2;
+  animation: heroCloudPulse 3s ease-in-out infinite;
+  filter: drop-shadow(0 10px 30px rgba(0, 161, 224, 0.3));
+}
+
+.hero-cloud-path {
+  animation: heroCloudGlow 2s ease-in-out infinite;
+}
+
+.hero-lightning {
+  animation: heroLightningFlash 1.5s ease-in-out infinite;
+}
+
+@keyframes heroCloudPulse {
+  0%, 100% {
+    transform: scale(1) translateY(0);
+  }
+  50% {
+    transform: scale(1.05) translateY(-10px);
+  }
+}
+
+@keyframes heroCloudGlow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes heroLightningFlash {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+/* Orbiting mascots */
+.hero-mascot {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  z-index: 3;
+}
+
+.hero-astro {
+  top: 10%;
+  left: 20%;
+  animation: orbitAstro 15s linear infinite;
+}
+
+.hero-codey {
+  top: 15%;
+  right: 25%;
+  animation: orbitCodey 18s linear infinite;
+}
+
+.hero-cloudy {
+  bottom: 20%;
+  left: 15%;
+  animation: orbitCloudy 20s linear infinite;
+}
+
+.hero-einstein {
+  bottom: 15%;
+  right: 20%;
+  animation: orbitEinstein 16s linear infinite;
+}
+
+.hero-blaze {
+  top: 50%;
+  left: 5%;
+  animation: orbitBlaze 14s linear infinite;
+}
+
+@keyframes orbitAstro {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(50px, 30px) rotate(90deg);
+  }
+  50% {
+    transform: translate(100px, 0) rotate(180deg);
+  }
+  75% {
+    transform: translate(50px, -30px) rotate(270deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg);
+  }
+}
+
+@keyframes orbitCodey {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(-40px, 40px) rotate(-90deg);
+  }
+  50% {
+    transform: translate(-80px, 0) rotate(-180deg);
+  }
+  75% {
+    transform: translate(-40px, -40px) rotate(-270deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(-360deg);
+  }
+}
+
+@keyframes orbitCloudy {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  33% {
+    transform: translate(60px, -20px) rotate(120deg);
+  }
+  66% {
+    transform: translate(-30px, -50px) rotate(240deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg);
+  }
+}
+
+@keyframes orbitEinstein {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(-50px, -30px) rotate(-90deg);
+  }
+  50% {
+    transform: translate(-100px, 0) rotate(-180deg);
+  }
+  75% {
+    transform: translate(-50px, 30px) rotate(-270deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(-360deg);
+  }
+}
+
+@keyframes orbitBlaze {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+  25% {
+    transform: translate(30px, 50px) rotate(90deg) scale(1.1);
+  }
+  50% {
+    transform: translate(0, 100px) rotate(180deg) scale(1);
+  }
+  75% {
+    transform: translate(-30px, 50px) rotate(270deg) scale(1.1);
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg) scale(1);
+  }
+}
+
+/* Floating particles */
+.hero-particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.particle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #00A1E0;
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: particleFloat 8s ease-in-out infinite;
+}
+
+.particle-1 { top: 10%; left: 10%; animation-delay: 0s; }
+.particle-2 { top: 20%; left: 30%; animation-delay: 0.5s; }
+.particle-3 { top: 30%; left: 50%; animation-delay: 1s; }
+.particle-4 { top: 40%; left: 70%; animation-delay: 1.5s; }
+.particle-5 { top: 50%; left: 85%; animation-delay: 2s; }
+.particle-6 { top: 60%; left: 70%; animation-delay: 2.5s; }
+.particle-7 { top: 70%; left: 50%; animation-delay: 3s; }
+.particle-8 { top: 80%; left: 30%; animation-delay: 3.5s; }
+.particle-9 { top: 15%; left: 60%; animation-delay: 4s; }
+.particle-10 { top: 35%; left: 20%; animation-delay: 4.5s; }
+.particle-11 { top: 65%; left: 80%; animation-delay: 5s; }
+.particle-12 { top: 85%; left: 40%; animation-delay: 5.5s; }
+
+@keyframes particleFloat {
+  0%, 100% {
+    transform: translateY(0) translateX(0) scale(1);
+    opacity: 0.6;
+  }
+  25% {
+    transform: translateY(-30px) translateX(20px) scale(1.2);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-60px) translateX(-10px) scale(0.8);
+    opacity: 0.4;
+  }
+  75% {
+    transform: translateY(-30px) translateX(-20px) scale(1.1);
+    opacity: 0.7;
+  }
+}
+
+/* Dark mode */
+.dark-mode .salesforce-hero-container {
+  background: linear-gradient(135deg, rgba(0, 161, 224, 0.1) 0%, rgba(23, 152, 193, 0.1) 100%);
+}
+
+.dark-mode .cloud {
+  background: rgba(0, 161, 224, 0.15);
+}
+
+.dark-mode .cloud:before,
+.dark-mode .cloud:after {
+  background: rgba(0, 161, 224, 0.15);
+}
+
+.dark-mode .particle {
+  background: #1798C1;
+}
+
+/* Responsive */
+@media (max-width: 1380px) {
+  .salesforce-hero-container {
+    height: 400px;
+  }
+  
+  .hero-salesforce-cloud {
+    width: 160px;
+    height: 160px;
+  }
+  
+  .hero-mascot {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .salesforce-hero-container {
+    height: 300px;
+    padding: 20px;
+  }
+  
+  .hero-salesforce-cloud {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .hero-mascot {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .cloud-1, .cloud-2, .cloud-3 {
+    opacity: 0.4;
+  }
+  
+  .particle {
+    width: 6px;
+    height: 6px;
+  }
+}
+

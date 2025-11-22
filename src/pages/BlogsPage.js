@@ -7,14 +7,14 @@ import SEO from "../components/SEO";
 import { StyleProvider } from "../contexts/StyleContext";
 
 export default function BlogsPage() {
-  // Load theme preference from localStorage, default to light mode
+  // Default to light mode - only use dark if explicitly saved in localStorage
   const savedTheme = localStorage.getItem('theme');
-  const initialIsDark = savedTheme === 'dark'; // Only use dark if explicitly set
+  const initialIsDark = savedTheme === 'dark' || false; // Explicitly default to false (light mode)
   
   const [isDark, setIsDark] = useState(initialIsDark);
 
   useEffect(() => {
-    // Apply theme to body
+    // Apply theme to body - ensure light mode by default
     if (isDark) {
       document.body.classList.add('dark-mode');
     } else {
