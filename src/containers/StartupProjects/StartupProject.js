@@ -10,6 +10,12 @@ export default function StartupProject() {
     win.focus();
   }
   const { isDark } = useContext(StyleContext);
+  
+  // Don't render if there are no projects
+  if (!bigProjects.projects || bigProjects.projects.length === 0) {
+    return null;
+  }
+  
   return (
     <Fade direction="up" duration={1000} triggerOnce>
       <div className="main" id="projects">
@@ -26,9 +32,10 @@ export default function StartupProject() {
           </p>
           <div className="startup-projects-main">
             <div className="startup-project-text">
-              {bigProjects.projects.map((project) => {
+              {bigProjects.projects.map((project, index) => {
                 return (
                   <div
+                    key={index}
                     className="saaya-health-div"
                     onClick={() => openProjectInNewWindow(project.link)}
                   >

@@ -27,7 +27,9 @@ export default function Skills() {
             >
               {skillsSection.subTitle}
             </p>
-            <SoftwareSkill />
+            <div className="software-skills-wrapper">
+              <SoftwareSkill />
+            </div>
             <div className="skills-list">
               {skillsSection.skills.map((skill, index) => {
                 return (

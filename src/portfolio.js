@@ -27,7 +27,7 @@ const socialMediaLinks = {
 // Your Skills Section
 
 const skillsSection = {
-  title: "What i do",
+  title: "What I Do",
   subTitle: "Salesforce Integration and IAM Architect at Deloitte",
   skills: [
     emoji("⚡ Designing and implementing secure, scalable integrations between Salesforce and enterprise systems"),
@@ -208,14 +208,9 @@ const openSource = {
 // Some Big Projects You have worked with your company
 
 const bigProjects = {
-  title: "Capstone Project",
-  subtitle: "ASP.NET MVC Craft Center Website - Developed a web application using ASP.NET Core 5.0 MVC, Razor Pages, SQL Server, and Bootstrap. Implemented SAML 2.0 and OAuth 2.0 protocols. Designed and implemented relational database for membership and class registration process.",
-  projects: [
-    {
-      image: logo,
-      link: "https://media.oregonstate.edu/media/t/1_7kd65oxz"
-    }
-  ]
+  title: "",
+  subtitle: "",
+  projects: []
 };
 
 // Your Achievement Section Include Your Certification Talks and More
@@ -285,6 +280,11 @@ const blogSection = {
   subtitle: "I like to develop small projects that you can take a look at my Github account.",
 
   blogs: [
+    {
+      url: "https://media.oregonstate.edu/media/t/1_7kd65oxz",
+      title: "ASP.NET MVC Craft Center Website - Capstone Project",
+      description: "Developed a web application using ASP.NET Core 5.0 MVC, Razor Pages, SQL Server, and Bootstrap. Implemented SAML 2.0 and OAuth 2.0 protocols. Designed and implemented relational database for membership and class registration process."
+    },
     {
       url: "https://github.com/hamzamunaf/servicedesk-botUI",
       title: "IT Support Chat Bot",

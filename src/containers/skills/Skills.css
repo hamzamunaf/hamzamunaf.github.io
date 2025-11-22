@@ -2,7 +2,8 @@
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
-  padding: 40px 20px;
+  padding: 60px 20px;
+  margin-top: 0;
 }
 
 .skills-section:hover {
@@ -13,15 +14,26 @@
 .skills-main-div {
   display: flex;
   align-items: flex-start;
-  gap: 60px;
+  gap: 80px;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .skills-text-div {
   flex: 1.2;
   min-width: 0;
   padding: 0;
+}
+
+.software-skills-wrapper {
+  margin-bottom: 36px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.dark-mode .software-skills-wrapper {
+  border-bottom-color: #3a3f4f;
 }
 
 .skills-image-div {
@@ -31,7 +43,7 @@
   position: relative;
   flex: 0.8;
   min-height: 400px;
-  padding: 20px;
+  padding: 0;
 }
 
 .skills-image-div:empty::before {
@@ -53,26 +65,27 @@
 .skills-image-div > img,
 .skills-image {
   max-width: 100%;
-  max-height: 500px;
+  max-height: 450px;
   height: auto;
   width: auto;
-  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.08));
   transition: transform 0.3s ease;
   object-fit: contain;
 }
 
 .skills-image-div > img:hover,
 .skills-image:hover {
-  transform: translateY(-5px) scale(1.02);
+  transform: translateY(-3px);
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.12));
 }
 
 .skills-heading {
-  font-size: 42px;
+  font-size: 40px;
   font-weight: 700;
   color: #2c3e50;
-  margin-bottom: 16px;
-  line-height: 1.3;
-  letter-spacing: -0.5px;
+  margin-bottom: 12px;
+  line-height: 1.2;
+  letter-spacing: -0.3px;
 }
 
 .dark-mode .skills-heading {
@@ -80,11 +93,12 @@
 }
 
 .skills-text-subtitle {
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 32px;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 40px;
   color: #6c757d;
-  line-height: 1.6;
+  line-height: 1.7;
+  max-width: 600px;
 }
 
 .dark-mode .skills-text-subtitle {
@@ -92,29 +106,31 @@
 }
 
 .skills-list {
-  margin-top: 30px;
+  margin-top: 0;
   padding: 0;
 }
 
 .skills-text-item {
-  font-size: 17px;
-  line-height: 1.8;
-  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.75;
+  margin-bottom: 18px;
   color: #495057;
   padding: 0;
   border: none;
   position: relative;
-  padding-left: 24px;
+  padding-left: 28px;
+  font-weight: 400;
 }
 
 .skills-text-item::before {
-  content: '•';
-  color: #3498db;
-  font-weight: bold;
-  font-size: 20px;
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: #3498db;
+  border-radius: 50%;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 8px;
+  top: 10px;
 }
 
 .dark-mode .skills-text-item {
@@ -122,7 +138,7 @@
 }
 
 .dark-mode .skills-text-item::before {
-  color: #3498db;
+  background: #3498db;
 }
 .subTitle {
   color: #6c757d;
@@ -134,45 +150,66 @@
 
 /* Media Query */
 @media (max-width: 1380px) {
+  .skills-main-div {
+    gap: 60px;
+  }
   .skills-heading {
-    font-size: 40px;
+    font-size: 36px;
   }
   .skills-text-subtitle {
-    font-size: 18px;
+    font-size: 16px;
   }
   .skills-text-item {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
 @media (max-width: 968px) {
+  .skills-section {
+    padding: 50px 20px;
+  }
   .skills-main-div {
     flex-direction: column;
-    gap: 30px;
+    gap: 50px;
+    padding: 0;
   }
   .skills-image-div {
     min-height: 300px;
     order: 2;
+    width: 100%;
   }
   .skills-text-div {
     order: 1;
+    width: 100%;
+  }
+  .skills-text-subtitle {
+    max-width: 100%;
   }
 }
 
 @media (max-width: 768px) {
+  .skills-section {
+    padding: 40px 15px;
+  }
   .skills-heading {
     font-size: 32px;
-    text-align: center;
+    text-align: left;
   }
   .skills-text-subtitle {
-    font-size: 16px;
-    text-align: center;
+    font-size: 15px;
+    text-align: left;
+    margin-bottom: 32px;
   }
   .skills-text-item {
     font-size: 15px;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
+    padding-left: 24px;
   }
   .skills-image-div {
     min-height: 250px;
+  }
+  .software-skills-wrapper {
+    margin-bottom: 28px;
+    padding-bottom: 24px;
   }
 }

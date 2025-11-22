@@ -1,2 +1,6 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://hamzamunaf.github.io/sitemap.xml

@@ -21,9 +21,10 @@ export default function Blogs() {
         </div>
         <div className="blog-main-div">
           <div className="blog-text-div">
-            {blogSection.blogs.map((blog) => {
+            {blogSection.blogs.map((blog, index) => {
               return (
                 <BlogCard
+                  key={index}
                   isDark={isDark}
                   blog={{
                     url: blog.url,

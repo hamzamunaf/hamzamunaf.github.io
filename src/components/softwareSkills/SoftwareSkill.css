@@ -1,17 +1,18 @@
 .dev-icons {
   padding-left: 0;
   list-style: none;
-  font-size: 3rem;
-  margin-bottom: 32px;
+  font-size: 2.8rem;
+  margin-bottom: 36px;
   margin-top: 0px;
   text-align: left;
 }
 
 .software-skill-inline {
   display: inline-block;
-  margin-right: 30px;
-  margin-bottom: 24px;
+  margin-right: 32px;
+  margin-bottom: 28px;
   vertical-align: top;
+  text-align: center;
 }
 
 .software-skill-inline > i {
@@ -34,10 +35,11 @@
 
 .software-skill-inline > p {
   color: #6c757d;
-  font-size: 11px;
-  margin-top: 8px;
+  font-size: 12px;
+  margin-top: 10px;
   font-weight: 500;
   transition: color 0.3s ease;
+  letter-spacing: 0.3px;
 }
 
 .dark-mode .software-skill-inline > p {

@@ -1,4 +1,5 @@
 ﻿import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import "./Greeting.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
@@ -40,6 +41,9 @@ export default function Greeting() {
                   newTab={true}
                   href={greeting.resumeLink}
                 />
+                <Link to="/blogs" className="main-button" style={{ textDecoration: 'none' }}>
+                  View Projects
+                </Link>
               </div>
             </div>
           </div>

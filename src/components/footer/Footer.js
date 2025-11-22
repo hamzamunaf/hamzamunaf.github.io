@@ -6,14 +6,12 @@ import StyleContext from "../../contexts/StyleContext";
 
 export default function Footer() {
   const { isDark } = useContext(StyleContext);
+  const currentYear = new Date().getFullYear();
   return (
     <Fade direction="up" duration={1000} triggerOnce>
       <div className="footer-div">
         <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
-          Theme by{" "}
-          <a href="https://github.com/saadpasta/developerFolio">
-            developerFolio
-          </a>
+          © {currentYear} Hamza Munaf. All rights reserved.
         </p>
       </div>
     </Fade>

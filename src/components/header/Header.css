@@ -45,11 +45,16 @@
 }
 
 .header li a:hover,
+.header li a.active,
 .header .menu-btn:hover {
   background: #3498db;
   color: white !important;
   border-radius: 4px;
   transition: all 0.3s ease;
+}
+
+.header li a.active {
+  font-weight: 600;
 }
 
 .header .logo {
