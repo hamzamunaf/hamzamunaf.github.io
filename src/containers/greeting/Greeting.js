@@ -3,14 +3,15 @@ import "./Greeting.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import { greeting } from "../../portfolio";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import emoji from "react-easy-emoji";
 import StyleContext from "../../contexts/StyleContext";
+import developerActivity from "../../assets/images/developerActivity.svg";
 
 export default function Greeting() {
   const { isDark } = useContext(StyleContext);
   return (
-    <Fade bottom duration={1000} distance="40px">
+    <Fade direction="up" duration={1000} triggerOnce>
       <div className="greet-main" id="greeting">
         <div className="greeting-main">
           <div className="greeting-text-div">
@@ -44,8 +45,9 @@ export default function Greeting() {
           </div>
           <div className="greeting-image-div">
             <img
-              alt="CodingLogo"
-              src="https://i.pinimg.com/originals/49/1a/68/491a68c5cc79da11284c767d5cbd814b.jpg"
+              alt="Developer Activity"
+              src={developerActivity}
+              className="greeting-image"
             ></img>
           </div>
         </div>

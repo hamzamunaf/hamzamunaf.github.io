@@ -1,5 +1,29 @@
 .dark-mode {
-  background-color: #171c28;
-  color: white;
-  transition: "0.1s";
+  background: #1a1d29;
+  color: #e8e8e8;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Professional backgrounds for sections */
+.main {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
+}
+
+.dark-mode .main {
+  background: #252836;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  border: 1px solid #3a3f4f;
+}
+
+.main:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.dark-mode .main:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }

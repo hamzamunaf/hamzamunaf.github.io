@@ -1,12 +1,13 @@
 import React from "react";
 import "./Progress.css";
 import { techStack } from "../../portfolio";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
+import skillImage from "../../assets/images/skill.svg";
 
 export default function StackProgress() {
     if(techStack.viewSkillBars){
         return (
-            <Fade bottom duration={1000} distance="20px">
+            <Fade direction="up" duration={1000} triggerOnce>
             <div className="skills-container">
 
                 <div className="skills-bar">
@@ -27,7 +28,7 @@ export default function StackProgress() {
                 </div>
 
                 <div className="skills-image">
-                    <img alt="Skills" src={"https://cdn.columbiauniversitybootcamp.com/wp-content/uploads/sites/108/2020/05/back-end-developer-skills.jpg"} />
+                    <img alt="Skills" src={skillImage} className="skill-progress-image" />
                 </div>
 
             </div>

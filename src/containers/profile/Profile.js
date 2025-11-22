@@ -1,5 +1,5 @@
 import React, { useState, useEffect ,lazy, Suspense } from "react";
-import ApolloClient, { gql } from "apollo-boost";
+import { ApolloClient, gql, InMemoryCache } from "@apollo/client";
 import { openSource } from "../../portfolio";
 import Contact from "../contact/Contact";
 import Loading from "../loading/Loading";
@@ -14,12 +14,9 @@ export default function Profile() {
   function getProfileData() {
     const client = new ApolloClient({
       uri: "https://api.github.com/graphql",
-      request: (operation) => {
-        operation.setContext({
-          headers: {
-            authorization: `Bearer ${openSource.githubConvertedToken}`,
-          },
-        });
+      cache: new InMemoryCache(),
+      headers: {
+        authorization: `Bearer ${openSource.githubConvertedToken}`,
       },
     });
 

@@ -13,9 +13,20 @@
     border-bottom-right-radius: 6px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    background-color: #aaa5ff;
+    background: #3498db;
     position: relative;
     overflow: hidden;
+    animation: progressAnimation 1.5s ease-out;
+}
+
+@keyframes progressAnimation {
+    from {
+        width: 0;
+    }
+}
+
+.dark-mode .meter > span {
+    background: #3498db;
 }
 .skill{
     line-height: 3.5vw;
@@ -35,10 +46,25 @@
     flex: 1;
     margin-bottom: 30px;
 }
-.skills-image > img {
+.skills-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.skills-image > img,
+.skill-progress-image {
     margin-left: 80px;
     max-width: 90%;
     height: auto;
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.1));
+    transition: transform 0.3s ease;
+}
+
+.skills-image > img:hover,
+.skill-progress-image:hover {
+    transform: translateY(-5px) scale(1.02);
 }
 
 /* Media Query */

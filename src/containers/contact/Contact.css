@@ -26,9 +26,13 @@
 
 .contact-detail:hover,
 .contact-detail-email:hover {
-  color: black;
-  text-shadow: 2px 1px 2px #b5b5b5;
+  color: #3498db;
   transition: all 0.3s;
+}
+
+.dark-mode .contact-detail:hover,
+.dark-mode .contact-detail-email:hover {
+  color: #3498db;
 }
 
 .contact-subtitle {
@@ -43,11 +47,26 @@
   margin-top: 4rem;
 }
 
-.contact-image-div > img {
+.contact-image-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.contact-image-div > img,
+.contact-image {
   max-width: 100%;
   height: auto;
   margin-left: 1.5rem;
   margin-top: -4rem;
+  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.1));
+  transition: transform 0.3s ease;
+}
+
+.contact-image-div > img:hover,
+.contact-image:hover {
+  transform: translateY(-5px) scale(1.02);
 }
 
 /* Media Query */

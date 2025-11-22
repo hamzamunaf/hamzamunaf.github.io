@@ -18,11 +18,20 @@ html,
 body {
   scroll-behavior: smooth;
 }
+
 body {
   margin: 0;
   font: 19px / 23px Montserrat, "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #f8f9fa;
+  min-height: 100vh;
+  color: #2c3e50;
+}
+
+body.dark-mode {
+  background: #1a1d29;
+  color: #e8e8e8;
 }
 /* Media Query */
 @media (max-width: 1380px) {

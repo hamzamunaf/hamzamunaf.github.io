@@ -37,7 +37,12 @@
 .greeting-text {
   font-size: 70px;
   line-height: 1.1;
-  color: black !important;
+  color: #2c3e50 !important;
+  font-weight: 700;
+}
+
+.dark-mode .greeting-text {
+  color: #e8e8e8 !important;
 }
 
 .greeting-text-p {
@@ -45,9 +50,24 @@
   line-height: 40px;
 }
 
-.greeting-image-div > img {
+.greeting-image-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.greeting-image-div > img,
+.greeting-image {
   max-width: 100%;
   height: auto;
+  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.1));
+  transition: transform 0.3s ease;
+}
+
+.greeting-image-div > img:hover,
+.greeting-image:hover {
+  transform: translateY(-5px) scale(1.02);
 }
 .wave-emoji {
   animation-duration: 1.8s;

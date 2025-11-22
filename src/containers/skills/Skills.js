@@ -2,23 +2,16 @@ import React, { useContext } from "react";
 import "./Skills.css";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import { skillsSection } from "../../portfolio";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import programmer from "../../assets/images/programmer.svg";
 
 export default function Skills() {
   const { isDark } = useContext(StyleContext);
   return (
-    <div className={isDark ? "dark-mode main" : "main"} id="skills">
+    <div className={`${isDark ? "dark-mode " : ""}main skills-section`} id="skills">
       <div className="skills-main-div">
-        <Fade left duration={1000}>
-          <div className="skills-image-div">
-            <img
-              alt="Hamza Working"
-              src={"https://i.pinimg.com/originals/83/13/f6/8313f67d2546e50652d4e31f74a1a789.png"}
-            ></img>
-          </div>
-        </Fade>
-        <Fade right duration={1000}>
+        <Fade direction="up" duration={1000} triggerOnce>
           <div className="skills-text-div">
             <h1
               className={isDark ? "dark-mode skills-heading" : "skills-heading"}
@@ -35,21 +28,35 @@ export default function Skills() {
               {skillsSection.subTitle}
             </p>
             <SoftwareSkill />
-            <div>
-              {skillsSection.skills.map((skills) => {
+            <div className="skills-list">
+              {skillsSection.skills.map((skill, index) => {
                 return (
                   <p
+                    key={index}
                     className={
                       isDark
-                        ? "dark-mode subTitle skills-text"
-                        : "subTitle skills-text"
+                        ? "dark-mode skills-text-item"
+                        : "skills-text-item"
                     }
                   >
-                    {skills}
+                    {skill}
                   </p>
                 );
               })}
             </div>
+          </div>
+        </Fade>
+        <Fade direction="up" duration={1000} triggerOnce>
+          <div className="skills-image-div">
+            <img
+              alt="Programmer"
+              src={programmer}
+              className="skills-image"
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.style.display = 'none';
+              }}
+            ></img>
           </div>
         </Fade>
       </div>

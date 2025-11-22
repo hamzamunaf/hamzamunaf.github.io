@@ -10,8 +10,8 @@ const greeting = {
   /* Your Summary And Greeting Section */
   username: "Hamza Munaf",
   title: "Hi all, I'm Hamza",
-  subTitle: emoji("Excellent team player and content expert with in-depth knowledge of development tools and programming languages.  Individual with keen eye for details and currently a senior at Oregon State University in Computer Science, with 2 years of experience as a Student Programmer and IT Technician. Aiming to leverage a proven knowledge of  programming skills, project planning, customer satisfaction skills and Usability testing skills for an internship as a Software Engineer."),
-  resumeLink: "https://hamzamunaf.github.io/assets/resume.pdf"
+  subTitle: emoji("Accomplished Salesforce Integration and IAM Architect with 3 years of consulting experience at Deloitte, specializing in designing and implementing secure, scalable integrations between Salesforce and enterprise systems. Adept at leveraging advanced tools, APIs, and programming languages to optimize identity and access management (IAM) solutions, ensuring robust security and seamless user experiences."),
+  resumeLink: "https://hamzamunaf.github.io/Hamza-Munaf-Resume-20251110.pdf"
 };
 
 // Your Social Media Link
@@ -19,7 +19,7 @@ const greeting = {
 const socialMediaLinks = {
 
   github: "https://github.com/hamzamunaf",
-  linkedin: "https://www.linkedin.com/in/hamza-munaf-048b56181/",
+  linkedin: "https://www.linkedin.com/in/hamzamunaf11/",
   gmail: "hamzamunaf.11@gmail.com"
   // Instagram and Twitter are also supported in the links!
 };
@@ -28,12 +28,13 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What i do",
-  subTitle: "Computer Science student at Oregon State University",
+  subTitle: "Salesforce Integration and IAM Architect at Deloitte",
   skills: [
-    emoji("⚡ Compeleting my Senior project integrating SAML 2.0 and OAuth2.0 in Asp.NET MVC."),
-    emoji("⚡ Daily bug fixing for my student job at Graduate School (Salesforce):  diagnose issues, fix bugs, write unit tests, pull requests in an active university-critical codebase on the Salesforce platform with contributors from many different university departments"),
-    emoji("⚡ Integration of third party API's to understand how they are working"),
-    emoji("⚡ Working towards CSX Cybersecurity Fundamentals Certificate")
+    emoji("⚡ Designing and implementing secure, scalable integrations between Salesforce and enterprise systems"),
+    emoji("⚡ Specializing in Single Sign-On (SSO) implementation and Identity & Access Management (IAM) solutions"),
+    emoji("⚡ Utilizing Bulk API, Streaming API, and Event Platforms for data operations and real-time processing"),
+    emoji("⚡ Designing APIs using OpenAPI specifications and ensuring code quality with SonarQube"),
+    emoji("⚡ Certified Salesforce Integration Architect, IAM Architect, System Architect, and Development Lifecycle Architect")
   ],
 
 /* Make Sure You include correct Font Awesome Classname to view your icon
@@ -41,44 +42,44 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
       skillName: "Salesforce",
       fontAwesomeClassname: "fab fa-salesforce"
+    },
+    {
+      skillName: "C#",
+      fontAwesomeClassname: "fab fa-microsoft"
     },
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "python",
+      skillName: "Python",
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "Node.js",
+      fontAwesomeClassname: "fab fa-node"
+    },
+    {
+      skillName: "React",
+      fontAwesomeClassname: "fab fa-react"
+    },
+    {
+      skillName: "SQL/SOQL",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "Git/Github",
+      fontAwesomeClassname: "fab fa-github"
+    },
+    {
+      skillName: "Apex",
+      fontAwesomeClassname: "fab fa-salesforce"
+    },
+    {
+      skillName: "Bash",
+      fontAwesomeClassname: "fas fa-terminal"
     }
   ]
 };
@@ -89,13 +90,24 @@ const educationInfo = {
   viewEducation: true, // Set it to true to see education section
   schools: [
     {
-      schoolName: "Oregon State University",
-      logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbyWepG6NckklFP5JL1xi43slsNRCLur3VLg&usqp=CAU",
-      subHeader: "Bachelors in Computer Science, Applied Security (Senior)",
-      duration: "September 2017 - Ongoing",
+      schoolName: "Westcliff University",
+      logo: "https://logo.clearbit.com/westcliff.edu",
+      subHeader: "Master of Science in Engineering Management",
+      duration: "March 2025 - Present",
       descBullets: [
-        "Currently working on my Senior Project using ASP.NET MVC",
-        "Taking Advanced Web development Class to learn React and GraphQL"
+        "Currently pursuing Master's degree in Engineering Management",
+        "Focusing on leadership, project management, and technical strategy"
+      ]
+    },
+    {
+      schoolName: "Oregon State University",
+      logo: "https://logo.clearbit.com/oregonstate.edu",
+      subHeader: "B.Sc. Computer Science (Applied Security)",
+      duration: "September 2017 - March 2022",
+      descBullets: [
+        "Graduated with 3.59 GPA",
+        "Specialized in Applied Security",
+        "Completed Senior Capstone Project: ASP.NET MVC Craft Center Website with SAML 2.0 and OAuth 2.0 integration"
       ]
     }
   ]
@@ -107,16 +119,20 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Backend",
+      Stack: "Salesforce Development",
+      progressPercentage: "95%"
+    },
+    {
+      Stack: "Integration & IAM",
       progressPercentage: "90%"
     },
     {
-      Stack: "Frontend/Design",  //Insert stack or technology you have experience in
-      progressPercentage: "60%"  //Insert relative proficiency in percentage
+      Stack: "Backend Development",
+      progressPercentage: "85%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "Frontend Development",
+      progressPercentage: "75%"
     }
   ]
 };
@@ -128,35 +144,54 @@ const workExperiences = {
   viewExperiences: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Student Programmer/Analyst",
-      company: "Oregon State University",
-      companylogo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbyWepG6NckklFP5JL1xi43slsNRCLur3VLg&usqp=CAU",
-      date: "July 2020 - Present",
-      desc: "Graduate School",
+      role: "Senior Consultant",
+      company: "Deloitte GPS",
+      companylogo: "https://logo.clearbit.com/deloitte.com",
+      date: "September 2022 - Present",
+      desc: "Salesforce Integration and IAM Architect",
       descBullets: [
-        "Automating complex business processes in Salesforce and performing operational support, enhancements and bug fixes as needed.",
-        "Became a part of the technical team and assisted non-technical employees with fixing bugs and writing test scenarios for different applications.",
-        "Performing configuration and customization for the in-house Salesforce applications.",
-        "Testing applications with extensive cases and working with team to get them fixed.",
-        "Writing documentation on Salesforce applications as well as streamlining the process of how to use the in-house application.",
-        "Learning in Demand Skills for Salesforce using Trailhead ( https://trailblazer.me/id/hmunaf1 )"
+        "Developed and implemented several integrations for inbound and outbound processes on the Salesforce platform, enhancing data exchange and communication",
+        "Successfully implemented SSO for the Salesforce environment, streamlining user authentication and providing seamless experience across various applications",
+        "Conducted feasibility analyses, proof-of-concept work, and provided accurate estimates to ensure timely feature delivery",
+        "Utilized Bulk API, Streaming API, and Event Platforms for operations such as data loading, real-time data processing, and event-driven workflows",
+        "Designed APIs using OpenAPI specifications to ensure compatibility and usability across multiple systems",
+        "Used SonarQube to perform automatic reviews with static analysis of code, detecting and addressing bugs and code smells promptly"
       ]
     },
     {
-      role: "Student Technician",
-      company: "Oregon State University",
-      companylogo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbyWepG6NckklFP5JL1xi43slsNRCLur3VLg&usqp=CAU",
-      date: "June 2018 – Present",
-      desc: "University Information and Technology",
+      role: "Product Development Engineer I",
+      company: "DAT Freight & Analytics",
+      companylogo: "https://logo.clearbit.com/dat.com",
+      date: "June 2021 – September 2022",
+      desc: "Salesforce Development",
       descBullets: [
-        "Assisting in and planning training, development and education for new software and hardware. Supporting various systems like Banner, Splunk, Microsoft Exchange Console, Active directory. Troubleshooting to identify and resolving problems in a timely manner. ",
-        "Extensive support for Zoom which includes licensing and functionalities for customers and became a part of Zoom Escalation team.",
-        "Responsibilities include installing operating systems and programs, troubleshooting hardware, and software issues and supporting applications like MS Office, Box, etc.",
-        "Creating, maintaining, and entering information into Knowledge Base articles for documentation. Streamlining the process for making documentation for new software's.",
-        "Communicating with different departments and tiers to escalate tasks in a timely manner."
+        "Developed flows, triggers, batch classes, Apex classes, and customized solutions in Salesforce to enhance company processes",
+        "Authored Salesforce application documentation and streamlined the usage process for custom-built applications",
+        "Enhanced Salesforce custom objects, page layouts, workflows, alerts, reports, and complex dashboards",
+        "Worked extensively with Salesforce.com standard objects (Accounts, Contacts, Opportunities) and custom objects",
+        "Utilized various web services (SOAP, REST) for different exposures, ensuring seamless integration with Salesforce",
+        "Expert in data cleansing and migration, using third-party Python modules to clean up data and output CSV files",
+        "Implemented Email-to-Case framework with different Future triggers to handle and cleanse cases",
+        "Integrated various third-party applications like DocuSign and Nice InContact into Salesforce",
+        "Increased test coverage to 97% for custom Apex classes, ensuring robust and reliable code"
       ]
     },
-
+    {
+      role: "Student Programmer/Analyst",
+      company: "Oregon State University",
+      companylogo: "https://logo.clearbit.com/oregonstate.edu",
+      date: "July 2020 – June 2021",
+      desc: "Graduate School",
+      descBullets: [
+        "Automated complex business processes in Salesforce and provided operational support, enhancements and bug fixes",
+        "Collaborated with technical teams and assisted non-technical employees with bug fixes and test scenario writing",
+        "Performed configuration and customization for in-house Salesforce applications, including downstream systems and flows",
+        "Documented Salesforce processes for using the in-house application to assist with training and onboarding",
+        "Conducted extensive testing of applications and worked with the team to resolve issues",
+        "Continuously learned in-demand Salesforce skills using Trailhead (https://trailblazer.me/id/hmunaf1)",
+        "Developed custom solutions in Lightning communities using CSS, Lightning Components, JQuery, and JavaScript"
+      ]
+    }
   ]
 };
 
@@ -165,7 +200,7 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
-  githubUserName: "saadpasta", // Change to your github username to view your profile in Contact Section.
+  githubUserName: "hamzamunaf", // Change to your github username to view your profile in Contact Section.
   showGithubProfile :"true" // Set true or false to show Contact profile using Github, defaults to false
 };
 
@@ -173,8 +208,8 @@ const openSource = {
 // Some Big Projects You have worked with your company
 
 const bigProjects = {
-  title: "Senior Design Project",
-  subtitle: "Developed OSU Craft Center Online Tool,  Senior Project: Custom Asp.Net MVC application development for student registration for classes in the craft center on campus using C# and Microsoft SQL Server with Entity Framework.",
+  title: "Capstone Project",
+  subtitle: "ASP.NET MVC Craft Center Website - Developed a web application using ASP.NET Core 5.0 MVC, Razor Pages, SQL Server, and Bootstrap. Implemented SAML 2.0 and OAuth 2.0 protocols. Designed and implemented relational database for membership and class registration process.",
   projects: [
     {
       image: logo,
@@ -187,26 +222,58 @@ const bigProjects = {
 
 const achievementSection = {
 
-  title: emoji("Awards and Achievements 🏆 "),
-  subtitle: "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+  title: emoji("Certifications and Achievements 🏆 "),
+  subtitle: "Salesforce Certifications, Professional Achievements, and Academic Honors",
 
   achievementsCards: [
     {
-      title: "International Provost Scholarship",
-      subtitle: "Recieved a 4-year Scholarship for Oregon State University",
-      image: "https://wallpapercave.com/wp/uSRF0BG.jpg",
+      title: "Salesforce Integration Architect",
+      subtitle: "Certified in designing and implementing secure, scalable integrations between Salesforce and enterprise systems",
+      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%232c3e50' rx='8'/%3E%3Ctext x='50%25' y='45%25' font-family='Arial' font-size='32' font-weight='bold' fill='white' text-anchor='middle'%3E🔗%3C/text%3E%3Ctext x='50%25' y='70%25' font-family='Arial' font-size='14' fill='white' text-anchor='middle'%3EIntegration%3C/text%3E%3Ctext x='50%25' y='85%25' font-family='Arial' font-size='14' fill='white' text-anchor='middle'%3EArchitect%3C/text%3E%3C/svg%3E",
       footerLink: [
-        { name: "Award", url: "" }
+        { name: "View on Trailhead", url: "https://trailblazer.me/id/hmunaf1" }
       ]
     },
     {
-      title: "Dean's Honor List",
-      subtitle: "Achieved 4.0 GPA in Fall 2019, Spring 2020 and Fall 2020",
-      image: "https://wallpapercave.com/wp/uSRF0BG.jpg",
+      title: "Salesforce Identity & Access Management Architect",
+      subtitle: "Expert in implementing SSO and IAM solutions for Salesforce environments",
+      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%2334495e' rx='8'/%3E%3Ctext x='50%25' y='45%25' font-family='Arial' font-size='32' font-weight='bold' fill='white' text-anchor='middle'%3E🔐%3C/text%3E%3Ctext x='50%25' y='70%25' font-family='Arial' font-size='12' fill='white' text-anchor='middle'%3EIAM%3C/text%3E%3Ctext x='50%25' y='85%25' font-family='Arial' font-size='12' fill='white' text-anchor='middle'%3EArchitect%3C/text%3E%3C/svg%3E",
+      footerLink: [
+        { name: "View on Trailhead", url: "https://trailblazer.me/id/hmunaf1" }
+      ]
+    },
+    {
+      title: "Salesforce System Architect",
+      subtitle: "Certified in designing scalable and maintainable Salesforce architectures",
+      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%233498db' rx='8'/%3E%3Ctext x='50%25' y='45%25' font-family='Arial' font-size='32' font-weight='bold' fill='white' text-anchor='middle'%3E🏗️%3C/text%3E%3Ctext x='50%25' y='70%25' font-family='Arial' font-size='14' fill='white' text-anchor='middle'%3ESystem%3C/text%3E%3Ctext x='50%25' y='85%25' font-family='Arial' font-size='14' fill='white' text-anchor='middle'%3EArchitect%3C/text%3E%3C/svg%3E",
+      footerLink: [
+        { name: "View on Trailhead", url: "https://trailblazer.me/id/hmunaf1" }
+      ]
+    },
+    {
+      title: "Salesforce Development Lifecycle and Deployment Architect",
+      subtitle: "Expert in Salesforce development lifecycle, CI/CD, and deployment strategies",
+      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%232c3e50' rx='8'/%3E%3Ctext x='50%25' y='45%25' font-family='Arial' font-size='32' font-weight='bold' fill='white' text-anchor='middle'%3E⚙️%3C/text%3E%3Ctext x='50%25' y='70%25' font-family='Arial' font-size='11' fill='white' text-anchor='middle'%3EDeployment%3C/text%3E%3Ctext x='50%25' y='85%25' font-family='Arial' font-size='11' fill='white' text-anchor='middle'%3EArchitect%3C/text%3E%3C/svg%3E",
+      footerLink: [
+        { name: "View on Trailhead", url: "https://trailblazer.me/id/hmunaf1" }
+      ]
+    },
+    {
+      title: "Additional Salesforce Certifications",
+      subtitle: "Platform Developer I, Platform App Builder, Administrator, AI Associate, and Certified ScrumMaster",
+      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%2334495e' rx='8'/%3E%3Ctext x='50%25' y='45%25' font-family='Arial' font-size='32' font-weight='bold' fill='white' text-anchor='middle'%3E⭐%3C/text%3E%3Ctext x='50%25' y='70%25' font-family='Arial' font-size='12' fill='white' text-anchor='middle'%3EMultiple%3C/text%3E%3Ctext x='50%25' y='85%25' font-family='Arial' font-size='12' fill='white' text-anchor='middle'%3ECertifications%3C/text%3E%3C/svg%3E",
+      footerLink: [
+        { name: "View on Trailhead", url: "https://trailblazer.me/id/hmunaf1" }
+      ]
+    },
+    {
+      title: "International Provost Scholarship",
+      subtitle: "Received a 4-year Scholarship for Oregon State University",
+      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23e67e22' rx='8'/%3E%3Ctext x='50%25' y='45%25' font-family='Arial' font-size='32' font-weight='bold' fill='white' text-anchor='middle'%3E🏆%3C/text%3E%3Ctext x='50%25' y='70%25' font-family='Arial' font-size='14' fill='white' text-anchor='middle'%3EScholarship%3C/text%3E%3Ctext x='50%25' y='85%25' font-family='Arial' font-size='14' fill='white' text-anchor='middle'%3EAward%3C/text%3E%3C/svg%3E",
       footerLink: [
         { name: "Award", url: "" }
       ]
-    },
+    }
   ]
 };
 
@@ -219,24 +286,19 @@ const blogSection = {
 
   blogs: [
     {
-      url: "https://github.com/hamzamunaf/CS340-Project",
-      title: "Using Node.JS, Handlebars and MongoDB to setup a database for free Computer Science courses ",
-      description: "Managed the team for Setting up a relational Database and writing Queries for each part of the page performing different database operations."
-    },
-    {
       url: "https://github.com/hamzamunaf/servicedesk-botUI",
-      title: "IT Support Chat Bot using Node.JS",
-      description: "Support chat to troubleshoot computer's hardware and software issues and supporting two factor authentication app for Oregon State University"
-    },
-    {
-      url: "https://github.com/hamzamunaf/CS344-OTP",
-      title: "One Time Pad in C for Operating Systems",
-      description: "Using Sockets in C to develop One Time Pad in C"
+      title: "IT Support Chat Bot",
+      description: "Used BotUI, Handlebars, and JavaScript to create an automated chat bot using pre-defined knowledge base articles to help customers troubleshoot hardware and software issues."
     },
     {
       url: "https://github.com/hamzamunaf/React-OpenWeatherApi-MapBox",
-      title: "Using OpenWeatherApi and MapboxGL in React",
-      description: "Developing a website using OpenWeatherApi and MapboxGL"
+      title: "Open-Weather API and MapBoxGL",
+      description: "React application that shows weather maps for user-defined input areas using OpenWeather API and MapBoxGL external APIs."
+    },
+    {
+      url: "https://github.com/hamzamunaf",
+      title: "Google App Engine Portfolio Project",
+      description: "Utilized Google Cloud Platform DataStore to store user data, exposed an API using Datastore for CRUD operations and Auth0 JWT to authenticate users."
     }
   ]
 };
@@ -248,12 +310,13 @@ const talkSection = {
   subtitle: emoji("I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"),
 
   talks: [
-    {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
+    // Add your talks here
+    // {
+    //   title: "Talk Title",
+    //   subtitle: "Event Name",
+    //   slides_url: "https://example.com/slides",
+    //   event_url: "https://example.com/event"
+    // }
   ]
 };
 
@@ -264,14 +327,17 @@ const podcastSection = {
   subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
 
   // Please Provide with Your Podcast embeded Link
-  podcast: ["https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"]
+  podcast: [
+    // Add your podcast embed links here
+    // "https://anchor.fm/your-podcast/embed/episodes/..."
+  ]
 };
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle: "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "",
-  email_address: "Hamzamunaf.11@gmail.com"
+  number: "541-908-9529",
+  email_address: "hamzamunaf.11@gmail.com"
 };
 
 //Twitter Section

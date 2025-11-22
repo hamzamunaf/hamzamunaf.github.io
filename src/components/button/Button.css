@@ -1,26 +1,39 @@
 .main-button {
-  background-color: #55198b;
-  border: solid 1px #55198b;
+  background: #2c3e50;
+  border: 2px solid #2c3e50;
   color: white;
-  font-weight: 700;
+  font-weight: 600;
   width: max-content;
-  padding: 13px 22px;
+  padding: 12px 28px;
   margin-right: 50px;
   text-transform: uppercase;
-  border-radius: 6px;
+  border-radius: 4px;
   text-align: center;
   text-decoration: none;
   display: block;
   margin-top: 20px;
-  font-size: 16px;
+  font-size: 15px;
   cursor: pointer;
-  transition: all .3s ease-in-out 0s;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
 }
+
 .main-button:hover {
-  background-color: #ffffff;
-  color: #55198b;
-  transition: all .3s ease 0s;
-  transform: translateY(-3px);
+  background: #34495e;
+  border-color: #34495e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(44, 62, 80, 0.2);
+}
+
+.dark-mode .main-button {
+  background: #3498db;
+  border-color: #3498db;
+}
+
+.dark-mode .main-button:hover {
+  background: #2980b9;
+  border-color: #2980b9;
+  box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3);
 }
 .project-button{
   display: flex;

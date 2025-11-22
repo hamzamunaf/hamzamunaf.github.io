@@ -10,7 +10,23 @@ export default function AchievementCard({ cardInfo, isDark }) {
   return (
     <div className={isDark ? "dark-mode certificate-card" : "certificate-card"}>
       <div className="certificate-image-div">
-        <img src={cardInfo.image} alt="PWA" className="card-image"></img>
+        <img 
+          src={cardInfo.image} 
+          alt={cardInfo.title} 
+          className="card-image"
+          loading="lazy"
+          onError={(e) => {
+            e.target.onerror = null;
+            // Create a fallback SVG icon
+            const emoji = cardInfo.title.includes("Integration") ? "🔗" : 
+                         cardInfo.title.includes("IAM") ? "🔐" :
+                         cardInfo.title.includes("System") ? "🏗️" :
+                         cardInfo.title.includes("Deployment") ? "⚙️" :
+                         cardInfo.title.includes("Certifications") ? "⭐" :
+                         cardInfo.title.includes("Scholarship") ? "🏆" : "🎖️";
+            e.target.src = `data:image/svg+xml,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect width="200" height="200" fill="#667eea" rx="20"/><text x="50%" y="50%" font-family="Arial" font-size="60" fill="white" text-anchor="middle" dominant-baseline="middle">${emoji}</text></svg>`)}`;
+          }}
+        ></img>
       </div>
       <div className="certificate-detail-div">
         <h5 className={isDark ? "dark-mode card-title" : "card-title"}>

@@ -2,13 +2,15 @@ import React, { useContext } from "react";
 import "./Contact.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import { contactInfo } from "../../portfolio";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import contactMail from "../../assets/images/contactMail.webp";
+import contactMailDark from "../../assets/images/contactMailDark.svg";
 
 export default function Contact() {
   const { isDark } = useContext(StyleContext);
   return (
-    <Fade bottom duration={1000} distance="20px">
+    <Fade direction="up" duration={1000} triggerOnce>
       <div className="main contact-margin-top" id="contact">
         <div className="contact-div-main">
           <div className="contact-header">
@@ -46,8 +48,9 @@ export default function Contact() {
           </div>
           <div className="contact-image-div">
             <img
-              alt="Saad Working"
-              src={"https://cdn.pixabay.com/photo/2020/11/10/22/28/contact-us-5731122__340.png"}
+              alt="Contact"
+              src={isDark ? contactMailDark : contactMail}
+              className="contact-image"
             ></img>
           </div>
         </div>

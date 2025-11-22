@@ -2,28 +2,52 @@
   padding-left: 0;
   list-style: none;
   font-size: 3rem;
-  margin-bottom: 0px;
+  margin-bottom: 32px;
   margin-top: 0px;
-  text-align: center;
+  text-align: left;
 }
 
 .software-skill-inline {
   display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin-right: 30px;
+  margin-bottom: 24px;
+  vertical-align: top;
 }
 
 .software-skill-inline > i {
-  color: #868e96;
+  color: #6c757d;
+  transition: color 0.3s ease;
 }
 
 .software-skill-inline > i:hover {
-  color: #645beb;
+  color: #3498db;
+  transform: scale(1.1);
 }
+
+.dark-mode .software-skill-inline > i {
+  color: #adb5bd;
+}
+
+.dark-mode .software-skill-inline > i:hover {
+  color: #3498db;
+}
+
 .software-skill-inline > p {
-  color: #868e96;
-  font-size: 10px;
+  color: #6c757d;
+  font-size: 11px;
+  margin-top: 8px;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
-.software-skill-inline > i:hover ~ p{
-  color: #645beb;
+
+.dark-mode .software-skill-inline > p {
+  color: #adb5bd;
+}
+
+.software-skill-inline > i:hover ~ p {
+  color: #3498db;
+}
+
+.dark-mode .software-skill-inline > i:hover ~ p {
+  color: #3498db;
 }

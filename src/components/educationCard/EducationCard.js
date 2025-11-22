@@ -1,5 +1,5 @@
 import React, { createRef, useContext } from "react";
-import { Fade, Slide, Zoom } from "react-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 import "./EducationCard.css";
 import StyleContext from "../../contexts/StyleContext";
 
@@ -14,7 +14,7 @@ export default function EducationCard({ school }) {
   const { isDark } = useContext(StyleContext);
   return (
     <div>
-      <Fade left duration={1000}>
+      <Fade direction="right" duration={1000} triggerOnce>
         <div className="education-card">
           <div className="education-card-left">
             <img
@@ -23,6 +23,10 @@ export default function EducationCard({ school }) {
               className="education-roundedimg"
               src={school.logo}
               alt={school.schoolName}
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src = "https://via.placeholder.com/150/667eea/ffffff?text=" + encodeURIComponent(school.schoolName.substring(0, 2));
+              }}
             />
           </div>
           <div className="education-card-right">
@@ -55,7 +59,7 @@ export default function EducationCard({ school }) {
           </div>
         </div>
       </Fade>
-      <Slide left duration={2000}>
+      <Slide direction="left" duration={2000} triggerOnce>
         <div className="education-card-border"></div>
       </Slide>
     </div>

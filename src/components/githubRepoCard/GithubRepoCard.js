@@ -1,6 +1,6 @@
 import React from "react";
 import "./GithubRepoCard.css";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 
 export default function GithubRepoCard({ repo, isDark }) {
   function openRepoinNewTab(url) {
@@ -9,7 +9,7 @@ export default function GithubRepoCard({ repo, isDark }) {
   }
 
   return (
-    <Fade bottom duration={1000} distance="20px">
+    <Fade direction="up" duration={1000} triggerOnce>
       <div>
         <div
           className={isDark ? "dark-card-mode repo-card-div" : "repo-card-div"}
