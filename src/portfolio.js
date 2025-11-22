@@ -19,8 +19,7 @@ const greeting = {
 const socialMediaLinks = {
 
   github: "https://github.com/hamzamunaf",
-  linkedin: "https://www.linkedin.com/in/hamzamunaf11/",
-  gmail: "hamzamunaf.11@gmail.com"
+  linkedin: "https://www.linkedin.com/in/hamzamunaf11/"
   // Instagram and Twitter are also supported in the links!
 };
 
@@ -335,9 +334,8 @@ const podcastSection = {
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle: "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "541-908-9529",
-  email_address: "hamzamunaf.11@gmail.com"
+  subtitle: "Discuss a project or just want to say hi? Connect with me on LinkedIn.",
+  linkedin: "https://www.linkedin.com/in/hamzamunaf11/"
 };
 
 //Twitter Section
