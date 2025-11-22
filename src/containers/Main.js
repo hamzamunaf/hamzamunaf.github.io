@@ -22,17 +22,40 @@ import { educationInfo } from "../portfolio";
 export default class Main extends Component {
   constructor(props) {
     super(props);
+    // Load theme preference from localStorage
+    const savedTheme = localStorage.getItem('theme');
+    const isDark = savedTheme === 'dark' || (savedTheme === null && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    
     this.state = {
-      isDark: false,
+      isDark: isDark,
     };
   }
 
   componentDidMount() {
-    // Title is now handled by SEO component
+    // Apply theme to body
+    if (this.state.isDark) {
+      document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
+    }
   }
+
+  componentDidUpdate() {
+    // Update body class when theme changes
+    if (this.state.isDark) {
+      document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
+    }
+  }
+
   changeTheme = () => {
-    // Dark mode disabled - always keep light mode
-    this.setState({ isDark: false });
+    this.setState((prevState) => {
+      const newIsDark = !prevState.isDark;
+      // Save theme preference to localStorage
+      localStorage.setItem('theme', newIsDark ? 'dark' : 'light');
+      return { isDark: newIsDark };
+    });
   };
 
   render() {

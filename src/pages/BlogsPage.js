@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
 import Blogs from "../containers/blogs/Blogs";
@@ -7,10 +7,28 @@ import SEO from "../components/SEO";
 import { StyleProvider } from "../contexts/StyleContext";
 
 export default function BlogsPage() {
-  const [isDark, setIsDark] = useState(false);
+  // Load theme preference from localStorage
+  const savedTheme = localStorage.getItem('theme');
+  const initialIsDark = savedTheme === 'dark' || (savedTheme === null && window.matchMedia('(prefers-color-scheme: dark)').matches);
+  
+  const [isDark, setIsDark] = useState(initialIsDark);
+
+  useEffect(() => {
+    // Apply theme to body
+    if (isDark) {
+      document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
+    }
+  }, [isDark]);
 
   const changeTheme = () => {
-    setIsDark(false);
+    setIsDark((prev) => {
+      const newIsDark = !prev;
+      // Save theme preference to localStorage
+      localStorage.setItem('theme', newIsDark ? 'dark' : 'light');
+      return newIsDark;
+    });
   };
 
   return (
