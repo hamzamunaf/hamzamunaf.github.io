@@ -27,7 +27,7 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I Do",
-  subTitle: "Salesforce Integration and IAM Architect at Deloitte",
+  subTitle: "Salesforce Integration and IAM Expert",
   skills: [
     emoji("⚡ Designing and implementing secure, scalable integrations between Salesforce and enterprise systems"),
     emoji("⚡ Specializing in Single Sign-On (SSO) implementation and Identity & Access Management (IAM) solutions"),
@@ -147,7 +147,7 @@ const workExperiences = {
       company: "Deloitte GPS",
       companylogo: "https://logo.clearbit.com/deloitte.com",
       date: "September 2022 - Present",
-      desc: "Salesforce Integration and IAM Architect",
+      desc: "",
       descBullets: [
         "Developed and implemented several integrations for inbound and outbound processes on the Salesforce platform, enhancing data exchange and communication",
         "Successfully implemented SSO for the Salesforce environment, streamlining user authentication and providing seamless experience across various applications",
