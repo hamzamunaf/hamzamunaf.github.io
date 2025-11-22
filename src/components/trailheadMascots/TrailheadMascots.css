@@ -1,0 +1,100 @@
+.trailhead-mascot {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+  animation: mascotFloat 4s ease-in-out infinite;
+}
+
+.trailhead-mascot:hover {
+  opacity: 0.9;
+  transform: scale(1.1);
+}
+
+@keyframes mascotFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.trailhead-mascot svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 2px 4px rgba(0, 161, 224, 0.2));
+}
+
+/* Specific mascot styles */
+.astro {
+  animation-delay: 0s;
+}
+
+.codey {
+  animation-delay: 0.5s;
+}
+
+.cloudy {
+  animation-delay: 1s;
+}
+
+.einstein {
+  animation-delay: 1.5s;
+}
+
+.blaze {
+  animation-delay: 2s;
+}
+
+/* Floating mascots for background decoration */
+.mascot-decoration {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.mascot-decoration.top-left {
+  top: 20px;
+  left: 20px;
+}
+
+.mascot-decoration.top-right {
+  top: 20px;
+  right: 20px;
+}
+
+.mascot-decoration.bottom-left {
+  bottom: 20px;
+  left: 20px;
+}
+
+.mascot-decoration.bottom-right {
+  bottom: 20px;
+  right: 20px;
+}
+
+.mascot-decoration.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mascot-decoration:hover {
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .trailhead-mascot {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .mascot-decoration {
+    opacity: 0.5;
+  }
+}
+

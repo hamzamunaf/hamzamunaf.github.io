@@ -2,54 +2,67 @@
   padding-left: 0;
   list-style: none;
   font-size: 2.8rem;
-  margin-bottom: 36px;
+  margin-bottom: 0;
   margin-top: 0px;
-  text-align: left;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
 }
 
 .software-skill-inline {
-  display: inline-block;
-  margin-right: 32px;
-  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
   vertical-align: top;
   text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.software-skill-inline:hover {
+  transform: translateY(-5px);
 }
 
 .software-skill-inline > i {
-  color: #6c757d;
-  transition: color 0.3s ease;
+  color: #706E6B;
+  transition: all 0.3s ease;
+  display: inline-block;
 }
 
 .software-skill-inline > i:hover {
-  color: #3498db;
-  transform: scale(1.1);
+  color: #00A1E0;
+  transform: scale(1.15);
 }
 
 .dark-mode .software-skill-inline > i {
-  color: #adb5bd;
+  color: #B0ADAB;
 }
 
 .dark-mode .software-skill-inline > i:hover {
-  color: #3498db;
+  color: #00A1E0;
 }
 
 .software-skill-inline > p {
-  color: #6c757d;
-  font-size: 12px;
-  margin-top: 10px;
+  color: #3E3E3C;
+  font-size: 13px;
+  margin-top: 12px;
   font-weight: 500;
   transition: color 0.3s ease;
   letter-spacing: 0.3px;
+  white-space: nowrap;
 }
 
 .dark-mode .software-skill-inline > p {
-  color: #adb5bd;
+  color: #B0ADAB;
 }
 
 .software-skill-inline > i:hover ~ p {
-  color: #3498db;
+  color: #00A1E0;
 }
 
 .dark-mode .software-skill-inline > i:hover ~ p {
-  color: #3498db;
+  color: #00A1E0;
 }

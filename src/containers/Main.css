@@ -4,26 +4,31 @@
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* Professional backgrounds for sections */
+/* Professional Salesforce-themed backgrounds for sections */
 .main {
-  background: #ffffff;
+  background: #FFFFFF;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
-  border: 1px solid #e9ecef;
+  border: 1px solid #E5E5E5;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .dark-mode .main {
-  background: #252836;
+  background: #1C1C1C;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  border: 1px solid #3a3f4f;
+  border: 1px solid #3E3E3C;
 }
 
 .main:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 12px rgba(0, 161, 224, 0.15);
+  border-color: #00A1E0;
 }
 
 .dark-mode .main:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  border-color: #1798C1;
 }

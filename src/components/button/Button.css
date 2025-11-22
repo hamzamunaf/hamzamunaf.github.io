@@ -1,6 +1,6 @@
 .main-button {
-  background: #2c3e50;
-  border: 2px solid #2c3e50;
+  background: #00A1E0;
+  border: none;
   color: white;
   font-weight: 600;
   width: max-content;
@@ -12,17 +12,23 @@
   text-decoration: none;
   display: block;
   margin-top: 20px;
-  font-size: 15px;
+  font-size: 14px;
   cursor: pointer;
   transition: all 0.3s ease;
   letter-spacing: 0.5px;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 161, 224, 0.2);
 }
 
 .main-button:hover {
-  background: #34495e;
-  border-color: #34495e;
+  background: #1798C1;
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(44, 62, 80, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 161, 224, 0.3);
+}
+
+.main-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 161, 224, 0.2);
 }
 
 .dark-mode .main-button {

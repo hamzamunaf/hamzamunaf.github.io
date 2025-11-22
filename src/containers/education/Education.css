@@ -1,50 +1,48 @@
 .education-heading {
   font-size: 56px;
   font-weight: 400;
+  line-height: normal;
+  margin: 0px;
+  color: #00A1E0;
 }
 
-.education-section {
+.education-subtitle {
+  text-transform: uppercase;
+  margin: 0px;
+  margin-bottom: 50px;
+}
+
+.education-main-div {
   display: flex;
   flex-direction: column;
   width: 90%;
-  padding: 20px 0px;
+  padding: 20px 10px;
   margin: 0px auto;
-  margin-top: 2rem;
 }
 
-.education-section > * {
-  flex: 1;
-  margin-bottom: 30px;
+.education-header {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .education-card-container {
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
+  gap: 2rem;
 }
 
 @media (max-width: 1380px) {
-  .education-card-container {
-    padding-top: 0px;
-  }
   .education-heading {
     font-size: 40px;
-  }
-  .education-text-subtitle {
-    font-size: 18px;
-    text-align: center;
   }
 }
 
 @media (max-width: 768px) {
-  .education-card-container {
-    padding-top: 0px;
-  }
   .education-heading {
     font-size: 30px;
-    text-align: center;
   }
-  .education-text-subtitle {
+  .education-subtitle {
     font-size: 16px;
+    line-height: normal;
   }
 }

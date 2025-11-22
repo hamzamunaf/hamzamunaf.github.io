@@ -4,6 +4,7 @@ import AchievementCard from "../../components/achievementCard/AchievementCard";
 import { achievementSection } from "../../portfolio";
 import { Fade } from "react-awesome-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import { Cloudy, Blaze } from "../../components/trailheadMascots/TrailheadMascots";
 export default function Achievement() {
   const { isDark } = useContext(StyleContext);
   function openUrlInNewTab(url) {
@@ -13,6 +14,8 @@ export default function Achievement() {
   return (
     <Fade direction="up" duration={1000} triggerOnce>
       <div className="main" id="achievements">
+        <Cloudy className="mascot-decoration top-left" />
+        <Blaze className="mascot-decoration bottom-right" />
         <div className="achievement-main-div">
           <div className="achievement-header">
             <h1

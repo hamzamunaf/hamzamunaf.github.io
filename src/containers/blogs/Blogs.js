@@ -4,11 +4,14 @@ import BlogCard from "../../components/blogCard/BlogCard";
 import { blogSection } from "../../portfolio";
 import { Fade } from "react-awesome-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import { Codey, Astro } from "../../components/trailheadMascots/TrailheadMascots";
 export default function Blogs() {
   const { isDark } = useContext(StyleContext);
   return (
     <Fade direction="up" duration={1000} triggerOnce>
       <div className="main" id="blogs">
+        <Codey className="mascot-decoration top-left" />
+        <Astro className="mascot-decoration bottom-right" />
         <div className="blog-header">
           <h1 className="blog-header-text">{blogSection.title}</h1>
           <p

@@ -3,6 +3,7 @@
   font-weight: 400;
   line-height: normal;
   margin: 0px;
+  color: #00A1E0;
 }
 .achievement-subtitle {
   text-transform: uppercase;
@@ -10,7 +11,7 @@
   margin-bottom: 50px;
 }
 .subTitle {
-  color: #868e96;
+  color: #706E6B;
 }
 
 /* Media Query */

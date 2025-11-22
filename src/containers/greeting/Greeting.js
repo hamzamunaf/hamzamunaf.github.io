@@ -8,12 +8,15 @@ import { Fade } from "react-awesome-reveal";
 import emoji from "react-easy-emoji";
 import StyleContext from "../../contexts/StyleContext";
 import developerActivity from "../../assets/images/developerActivity.svg";
+import { Astro, Codey } from "../../components/trailheadMascots/TrailheadMascots";
 
 export default function Greeting() {
   const { isDark } = useContext(StyleContext);
   return (
     <Fade direction="up" duration={1000} triggerOnce>
       <div className="greet-main" id="greeting">
+        <Astro className="mascot-decoration top-left" />
+        <Codey className="mascot-decoration top-right" />
         <div className="greeting-main">
           <div className="greeting-text-div">
             <div>

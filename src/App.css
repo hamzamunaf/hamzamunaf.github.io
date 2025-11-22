@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -22,5 +25,5 @@
 }
 
 .subTitle {
-  color: #868e96;
+  color: #706E6B;
 }

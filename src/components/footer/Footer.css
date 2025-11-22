@@ -1,6 +1,10 @@
 .footer-text {
   text-align: center;
-  color: #868e96 !important;
+  color: #706E6B !important;
+  font-size: 14px;
+  padding: 20px;
+  background: transparent;
+  transition: all 0.3s ease;
 }
 
 .dark-mode {

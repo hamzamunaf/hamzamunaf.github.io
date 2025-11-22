@@ -10,29 +10,35 @@
   margin: 0 auto;
 }
 .card-title {
-  color: #000000;
+  color: #181818;
   font-size: 22px;
   line-height: 24px;
   font-weight: 700;
   margin: 15px 0 0 0;
 }
 .card-subtitle {
-  color: #666666;
+  color: #3E3E3C;
   font-size: 17px;
   line-height: 1.5rem;
 }
 .certificate-card {
-  background-color: rgb(255, 255, 255);
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px -15px;
+  background: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
   padding: 1.5rem;
-  border-radius: 10px;
-  border: 1px solid rgba(211, 211, 211, 0.397);
+  border-radius: 8px;
+  border: 1px solid #E5E5E5;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
+
 .certificate-detail-div {
   text-align: center;
 }
 .certificate-card:hover {
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -10px;
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 161, 224, 0.15);
+  border-color: #00A1E0;
 }
 .certificate-image-div {
   position: relative;
@@ -43,15 +49,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f8f9fa;
+  background: #F3F2F2;
   border-radius: 8px;
   padding: 20px;
-  border: 1px solid #e9ecef;
+  border: 1px solid #E5E5E5;
 }
 
 .dark-mode .certificate-image-div {
-  background: #2a2d3a;
-  border: 1px solid #3a3f4f;
+  background: #2A2A2A;
+  border: 1px solid #3E3E3C;
 }
 .achievement-cards-div {
   display: grid;
@@ -65,7 +71,7 @@
   justify-content: center;
 }
 .certificate-card-footer span.certificate-tag {
-  background: #3498db;
+  background: #00A1E0;
   color: white;
   vertical-align: middle;
   align-items: center;
@@ -77,10 +83,13 @@
   white-space: nowrap;
   line-height: 1.5;
   margin: 0 0.5rem 0.5rem 0;
-  padding: 0 0.75em;
+  padding: 0 1em;
   cursor: pointer;
-  transition: 0.2s ease-in;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 161, 224, 0.2);
 }
 span.certificate-tag:hover {
-  background: #2980b9;
+  background: #1798C1;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 161, 224, 0.3);
 }

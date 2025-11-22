@@ -5,63 +5,74 @@ import { skillsSection } from "../../portfolio";
 import { Fade } from "react-awesome-reveal";
 import StyleContext from "../../contexts/StyleContext";
 import programmer from "../../assets/images/programmer.svg";
+import { Codey, Einstein } from "../../components/trailheadMascots/TrailheadMascots";
 
 export default function Skills() {
   const { isDark } = useContext(StyleContext);
   return (
-    <div className={`${isDark ? "dark-mode " : ""}main skills-section`} id="skills">
-      <div className="skills-main-div">
-        <Fade direction="up" duration={1000} triggerOnce>
-          <div className="skills-text-div">
+    <Fade direction="up" duration={1000} triggerOnce>
+      <div className={`${isDark ? "dark-mode " : ""}main skills-section`} id="skills">
+        <Codey className="mascot-decoration top-right" />
+        <Einstein className="mascot-decoration bottom-left" />
+        <div className="skills-main-div">
+          <div className="skills-header">
             <h1
-              className={isDark ? "dark-mode skills-heading" : "skills-heading"}
+              className={
+                isDark
+                  ? "dark-mode heading skills-heading"
+                  : "heading skills-heading"
+              }
             >
-              {skillsSection.title}{" "}
+              {skillsSection.title}
             </h1>
             <p
               className={
                 isDark
-                  ? "dark-mode subTitle skills-text-subtitle"
-                  : "subTitle skills-text-subtitle"
+                  ? "dark-mode subTitle skills-subtitle"
+                  : "subTitle skills-subtitle"
               }
             >
               {skillsSection.subTitle}
             </p>
-            <div className="software-skills-wrapper">
-              <SoftwareSkill />
-            </div>
-            <div className="skills-list">
-              {skillsSection.skills.map((skill, index) => {
-                return (
-                  <p
-                    key={index}
-                    className={
-                      isDark
-                        ? "dark-mode skills-text-item"
-                        : "skills-text-item"
-                    }
-                  >
-                    {skill}
-                  </p>
-                );
-              })}
-            </div>
           </div>
-        </Fade>
-        <Fade direction="up" duration={1000} triggerOnce>
-          <div className="skills-image-div">
-            <img
-              alt="Programmer"
-              src={programmer}
-              className="skills-image"
-              onError={(e) => {
-                e.target.onerror = null;
-                e.target.style.display = 'none';
-              }}
-            ></img>
+          
+          <div className="skills-content-wrapper">
+            <Fade direction="up" duration={1000} triggerOnce>
+              <div className="software-skills-section">
+                <h3 className={isDark ? "dark-mode skills-section-title" : "skills-section-title"}>
+                  Technologies & Tools
+                </h3>
+                <SoftwareSkill />
+              </div>
+            </Fade>
+            
+            <Fade direction="up" duration={1000} triggerOnce>
+              <div className="skills-description-section">
+                <h3 className={isDark ? "dark-mode skills-section-title" : "skills-section-title"}>
+                  Core Competencies
+                </h3>
+                <div className="skills-list">
+                  {skillsSection.skills.map((skill, index) => {
+                    return (
+                      <div
+                        key={index}
+                        className={
+                          isDark
+                            ? "dark-mode skills-item-card"
+                            : "skills-item-card"
+                        }
+                      >
+                        <span className="skills-item-icon">✓</span>
+                        <span className="skills-item-text">{skill}</span>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            </Fade>
           </div>
-        </Fade>
+        </div>
       </div>
-    </div>
+    </Fade>
   );
 }
