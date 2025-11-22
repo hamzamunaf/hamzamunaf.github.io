@@ -22,9 +22,9 @@ import { educationInfo } from "../portfolio";
 export default class Main extends Component {
   constructor(props) {
     super(props);
-    // Load theme preference from localStorage
+    // Load theme preference from localStorage, default to light mode
     const savedTheme = localStorage.getItem('theme');
-    const isDark = savedTheme === 'dark' || (savedTheme === null && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    const isDark = savedTheme === 'dark'; // Only use dark if explicitly set
     
     this.state = {
       isDark: isDark,

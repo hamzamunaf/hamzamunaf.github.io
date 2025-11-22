@@ -7,9 +7,9 @@ import SEO from "../components/SEO";
 import { StyleProvider } from "../contexts/StyleContext";
 
 export default function BlogsPage() {
-  // Load theme preference from localStorage
+  // Load theme preference from localStorage, default to light mode
   const savedTheme = localStorage.getItem('theme');
-  const initialIsDark = savedTheme === 'dark' || (savedTheme === null && window.matchMedia('(prefers-color-scheme: dark)').matches);
+  const initialIsDark = savedTheme === 'dark'; // Only use dark if explicitly set
   
   const [isDark, setIsDark] = useState(initialIsDark);
 
