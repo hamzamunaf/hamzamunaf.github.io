@@ -150,16 +150,80 @@
 }
 
 @media (max-width: 768px) {
+    .experience-banner {
+        height: 9rem;
+    }
+    
+    .experience-blurred_div {
+        height: 9rem;
+    }
+    
+    .experience-div-company {
+        height: 7rem;
+    }
+    
+    .experience-roundedimg {
+        width: 6rem;
+        height: 6rem;
+        min-width: 6rem;
+        min-height: 6rem;
+        top: 6rem;
+    }
+    
     .experience-text-role {
-        font-size: 22px;
+        font-size: 20px;
+        padding-top: 1rem;
     }
     .experience-text-company {
-        font-size: 22px;
+        font-size: 20px;
     }
     .experience-text-date {
-        font-size: 18px;
+        font-size: 16px;
     }
     .experience-text-desc {
-        font-size: 16px;
+        font-size: 15px;
+    }
+    
+    .experience-text-details {
+        padding: 1rem;
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .experience-banner {
+        height: 8rem;
+    }
+    
+    .experience-blurred_div {
+        height: 8rem;
+    }
+    
+    .experience-div-company {
+        height: 6rem;
+    }
+    
+    .experience-roundedimg {
+        width: 5rem;
+        height: 5rem;
+        min-width: 5rem;
+        min-height: 5rem;
+        top: 5rem;
+    }
+    
+    .experience-text-role {
+        font-size: 18px;
+    }
+    
+    .experience-text-company {
+        font-size: 18px;
+    }
+    
+    .experience-text-date {
+        font-size: 14px;
+    }
+    
+    .experience-text-desc {
+        font-size: 14px;
     }
 }

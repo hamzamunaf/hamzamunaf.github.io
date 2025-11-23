@@ -66,3 +66,28 @@
 .dark-mode .software-skill-inline > i:hover ~ p {
   color: #00A1E0;
 }
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .dev-icons {
+    font-size: 2.2rem;
+    gap: 30px;
+  }
+  
+  .software-skill-inline > p {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dev-icons {
+    font-size: 1.8rem;
+    gap: 20px;
+  }
+  
+  .software-skill-inline > p {
+    font-size: 11px;
+    margin-top: 8px;
+  }
+}

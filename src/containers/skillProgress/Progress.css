@@ -138,23 +138,57 @@
 }
 
 @media (max-width: 768px) {
+    .proficiency-main-div {
+        width: 95%;
+        padding: 15px 10px;
+    }
+    
+    .proficiency-header {
+        margin-bottom: 30px;
+    }
+    
     .proficiency-heading {
         font-size: 30px;
     }
     .proficiency-subtitle {
-        font-size: 16px;
-        line-height: normal;
+        font-size: 14px;
+        line-height: 1.5;
+        padding: 0 10px;
     }
     .skills-container {
-        flex-direction: column
+        flex-direction: column;
+        padding: 10px 5px;
     }
     .skills-bar {
         line-height: 3rem;
-        margin: 20px;
+        margin: 10px 0;
+        width: 100%;
+    }
+    .skill {
+        line-height: 2.5rem;
+        font-size: 14px;
     }
     .skills-image {
         display: none;
         order: 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .proficiency-heading {
+        font-size: 24px;
+    }
+    
+    .proficiency-subtitle {
+        font-size: 12px;
+    }
+    
+    .skill {
+        font-size: 13px;
+    }
+    
+    .meter {
+        height: 18px;
     }
 }
   

@@ -52,13 +52,32 @@
 /* Media Query */
 @media (max-width: 768px) {
   .main-button {
-    font-size: 15px;
-    padding: 12px 18px;
+    font-size: 14px;
+    padding: 12px 24px;
     margin-right: 0px;
+    width: 100%;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .button-greeting-div .main-button {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
+
+@media (max-width: 480px) {
+  .main-button {
+    font-size: 13px;
+    padding: 10px 20px;
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 320px) {
   .main-button {
     font-size: 12px;
+    padding: 10px 16px;
   }
 }

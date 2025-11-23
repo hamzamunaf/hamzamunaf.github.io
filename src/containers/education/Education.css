@@ -38,11 +38,35 @@
 }
 
 @media (max-width: 768px) {
+  .education-main-div {
+    width: 95%;
+    padding: 15px 10px;
+  }
+  
+  .education-header {
+    margin-bottom: 30px;
+  }
+  
   .education-heading {
     font-size: 30px;
   }
   .education-subtitle {
-    font-size: 16px;
-    line-height: normal;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+  
+  .education-card-container {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .education-heading {
+    font-size: 24px;
+  }
+  
+  .education-subtitle {
+    font-size: 12px;
   }
 }

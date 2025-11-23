@@ -79,5 +79,28 @@
 @media (max-width: 768px) {
   .social-media-div {
     text-align: center;
+    font-size: 1.5em;
+  }
+  
+  .icon-button i {
+    font-size: 1.2rem;
+    height: 2.4rem;
+    width: 2.4rem;
+    line-height: 2.4rem;
+    margin: 0 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-media-div {
+    font-size: 1.3em;
+  }
+  
+  .icon-button i {
+    font-size: 1.1rem;
+    height: 2.2rem;
+    width: 2.2rem;
+    line-height: 2.2rem;
+    margin: 0 3px;
   }
 }

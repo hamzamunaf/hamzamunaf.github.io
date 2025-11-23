@@ -113,19 +113,69 @@
   }
 }
 @media (max-width: 768px) {
-  .button-greeting-div {
-    justify-content: space-around;
+  .greet-main {
+    margin-top: 5rem;
+    padding-top: 1rem;
+    width: 95%;
+    padding: 10px 5px;
   }
-  .greeting-text {
-    font-size: 30px;
-    text-align: center;
-  }
-  .greeting-text-p {
-    font-size: 16px;
-    line-height: normal;
-    text-align: center;
-  }
+  
   .greeting-main {
     display: block;
+    flex-direction: column;
+  }
+  
+  .greeting-text-div {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .button-greeting-div {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .greeting-text {
+    font-size: 32px;
+    text-align: center;
+    line-height: 1.2;
+  }
+  
+  .greeting-text-p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 0 10px;
+  }
+  
+  .greeting-image-div {
+    width: 100%;
+    min-height: 250px;
+  }
+  
+  .mascot-decoration {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .greet-main {
+    margin-top: 4rem;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .greeting-text {
+    font-size: 24px;
+  }
+  
+  .greeting-text-p {
+    font-size: 14px;
+  }
+  
+  .greeting-image-div {
+    min-height: 200px;
   }
 }

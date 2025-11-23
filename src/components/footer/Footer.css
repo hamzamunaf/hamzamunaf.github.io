@@ -15,3 +15,22 @@
   margin-top: 2rem;
   padding-bottom: 1rem;
 }
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .footer-text {
+    font-size: 12px;
+    padding: 15px 10px;
+  }
+  
+  .footer-div {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-text {
+    font-size: 11px;
+    padding: 12px 8px;
+  }
+}

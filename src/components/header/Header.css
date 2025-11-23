@@ -234,3 +234,32 @@
     font-size: 12px;
   }
 }
+
+@media (max-width: 767px) {
+  .header {
+    padding: 12px 15px;
+    min-height: 60px;
+  }
+  
+  .header .logo {
+    font-size: 1.2em;
+    margin-top: 5px;
+  }
+  
+  .header .logo-name {
+    padding: 0 5px;
+  }
+  
+  .header .menu-icon {
+    padding: 20px 15px;
+  }
+  
+  .header li a {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+  
+  .header .menu {
+    width: 100%;
+  }
+}
